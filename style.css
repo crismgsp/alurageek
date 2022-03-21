@@ -1,0 +1,592 @@
+/* pagina principal */
+
+/*cabecalho*/
+
+header{
+	background: #ffffff;
+	padding: 1vh 0;
+}
+
+
+#logo {
+	width: 20%;
+	display: inline-block;
+}
+
+.busca {
+    position: absolute;
+	top: 2.6vh;
+	right: 23vw;
+	display: inline-block;
+	width: 9rem;
+	padding: 0.2rem;
+	border-radius: 0.9rem;
+	background-color: rgb(208, 233, 233);
+}
+
+#textobusca {
+	border:none;
+	background-color: rgb(208, 233, 233);
+	outline:none; /*isso é pra nao aparecer a borda quando clica no buscador*/
+	width: 6rem;
+}
+
+#buscar {
+	display: inline-block;
+	size: 80%;
+}
+
+.login {
+    position: absolute;
+	top: 2.6vh;
+	right: 2vw;
+	display: inline;
+	background-color: #ffffff;
+	border-color: blue;
+	color:blue;
+	font-size: 1.1rem;
+	padding: 0.2rem;
+}
+/*banner*/
+
+#banner {
+	width: 100%;
+}
+
+#botaobanner {
+	background-color: rgb(62, 62, 179);
+	padding: 0.1rem;
+	color: #ffffff;
+	position: absolute;
+	left: 4vw;
+	top: 13vh;
+}
+
+#texto1 {
+	position: absolute;
+	left: 4vw;
+	top: 9vh;
+	color: #ffffff;
+	font-size: 0.9rem;
+}
+
+#texto2 {
+	position: absolute;
+	left: 4vw;
+	top: 11vh;
+	color: #ffffff;
+	font-size: 0.8rem;
+}
+
+/*parte dos produtos*/
+
+.categoria {
+	position: absolute;
+	left: 3vw;
+	font-size: 1.8rem;
+	margin-bottom: 0.7rem;
+
+}
+
+.vertudo {
+	position: absolute;
+	right: 3vw;
+	color: blue;
+}
+
+.produtos {
+	width: 80%;
+	margin: 0 auto;
+	align: center;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 150px;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding: 1rem;
+	padding-top: 2rem;
+}
+
+.fotoproduto {
+	widht: 100%;
+	align: center;
+}
+
+.produtos li:hover {
+	background-color: azure;
+}
+
+.verproduto{
+	color:blue;
+	font-weight: bold;
+}
+
+/*parte das informacoes e formulario de enviar mensagem*/
+
+.final {
+	display: inline-block;
+	background-color: rgba(185, 214, 231, 0.329);
+	width:100%;
+	padding-left: 10%;
+	padding-right: 10%;
+
+}
+
+
+.logofinal {
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 20px;
+	padding-top: 10px;
+}
+
+.informacoes {
+	display: inline-block;
+	padding-left: 7vw;
+	padding-right: 7vw;
+}
+
+.pinfo {
+	padding: 15px;
+	font-size: 20px;
+}
+
+.formulario {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 10vh 10vw;
+}
+
+.faleconosco{
+	font-weight: bold;
+	padding-bottom: 10px;
+	font-size: 1.1rem;
+
+}
+
+.form label {	       /*acrescentei isto pra ficar um embaixo do outro no formulario*/
+	display: block;
+	font-size: 20px;
+	
+}
+
+
+.Enviarmensagem {
+	background-color: rgb(89, 89, 209);
+	color:#ffffff;
+	display: block;  /*quando coloquei isso o botao foi pra debaixo da mensagem, estava ao lado */
+	padding: 10px;
+}
+
+/*rodapé*/
+footer {
+	text-align: center;
+	padding: 40px;
+}
+
+@media screen and (max-width: 281px)  {
+
+	header {
+		padding: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+
+	.busca {
+		position: absolute;
+		top: 0.5vh;
+		right: 28vw;
+		width: 8rem;
+	}	
+
+			
+	#textobusca {
+		border:none;
+		width: 5rem;
+		font-size: 0.8rem;
+	}
+
+	#buscar {
+		display: inline-block;
+		size: 10%;
+	}
+
+	.login {
+		position: absolute;
+		top: 0.5vh;
+		right: 2vw;	
+	}	
+
+	#botaobanner {
+		position: absolute;
+		top: 0.5vh;
+		left: 1vh;
+		
+	}
+
+	
+	.produtos {
+		width: 100%;
+	}
+
+	.categoria {
+		font-size: 1rem;
+	}
+
+	.produtos li {
+		display: inline-block;
+		text-align: center;
+		width: 120px;
+		vertical-align: top;
+		margin-top: 20px;
+		padding: 1vh 1vw;
+		box-sizing: border-box;
+	}
+
+	.pinfo {
+		padding: 4px;
+		font-size: 16px;
+	}
+
+}	
+
+
+@media screen and (max-width: 415px)  {
+	
+	header {
+		background:#ffffff;
+		padding: 10px;
+		padding-bottom: 15px;
+	}
+
+	.busca {
+		position: absolute;
+		top: 0.5vh;
+		right: 30vw;
+	}
+
+	
+	.login {
+		position: absolute;
+		top: 0.5vh;
+		right: 2vw;	
+	}	
+
+	#botaobanner {
+		left: 6vw;
+		
+	}
+
+	
+	#texto1 {
+		position: absolute;
+		left: 6vw;
+	}	
+	
+	#texto2 {
+		position: absolute;
+		left: 4vw;
+	}	
+
+	.categoria {
+		position: absolute;
+		left: 6vw;
+		margin-bottom: 15px;
+	}
+	
+	.produtos {
+		width: 100%;
+		align: center;
+	}
+
+	.produtos li {
+		display: inline-block;
+		text-align: center;
+		width: 140px;
+	}
+
+	.pinfo {
+		padding: 5px;
+		font-size: 20px;
+	}
+
+	.formulario {
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 2vh 10vw;
+	}
+
+	.Enviarmensagem {
+		background-color: rgb(89, 89, 209);
+		color:#ffffff;
+		display: block;  /*quando coloquei isso o botao foi pra debaixo da mensagem, estava ao lado */
+		padding: 5px;
+	}
+
+	footer {
+		text-align: center;
+		padding: 10px;
+	}
+
+}
+
+@media screen and (max-width: 821px) {
+	
+
+	.busca {
+		position: absolute;
+		top: 2.3vh;
+		right: 26vw;
+	}	
+
+	.categoria {
+		font-size: 1.15rem;
+		font-weight: bold;
+	}
+
+	.produtos li {
+		display: inline-block;
+		text-align: center;
+		width: 200px;
+	}	
+
+	.vertudo {
+		position: absolute;
+		right: 7vw;
+	}	
+
+	
+	.final {
+		width: 80%;
+		display: block;
+		padding-left: 20vw;
+	}
+
+	.logofinal {
+		display: block;
+		align: center;
+		padding-left: 8vw;
+	}
+	
+	
+	.pinfo {
+		padding: 5px;
+		font-size: 1rem;
+		padding-left: 8vw;
+		
+	}
+
+	.formulario {
+		display: block;
+		box-sizing: border-box;
+		padding: 2vh 10vw;
+		margin-left: 5vw;
+		align: center;
+	}
+
+}
+
+
+@media screen and (max-width: 1023px) {
+	
+	header {
+		background-color: #ffffff;
+	}
+	
+	#botaobanner {
+		left: 4vw;
+		top: 21vh;
+	}
+
+	
+	#texto1 {
+		position: absolute;
+		left: 4vw;
+		top: 19vh;
+		
+	}
+	
+	#texto2 {
+		position: absolute;
+		left: 4vw;
+		top: 17vh;
+		
+	}
+
+	.vertudo {
+		position: absolute;
+		right: 10vw;
+	}
+
+	.final {
+		width: 100%;
+		display: inline-block;
+		padding-left: 1vw;
+	}
+
+	.logofinal {
+		padding-left: 1vw;
+	}
+	
+	.informacoes {
+		display: inline-block;
+		padding-left: 1vw;
+		padding-right: 1vw;
+				
+	}
+	
+	.pinfo {
+		padding: 7px;
+		font-size: 1rem;
+	}
+
+	.formulario {
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 1vh 1vw;
+	}
+
+	.Enviarmensagem {
+		background-color: rgb(89, 89, 209);
+		color:#ffffff;
+		display: block;  
+		padding: 5px;
+	}
+
+	footer {
+		text-align: center;
+		padding: 10px;
+	}
+	
+}
+
+
+@media screen and (min-width: 1024px)  {
+	
+	.busca {
+		position: absolute;
+		top: 3.4vh;
+		right: 40vw;
+
+	}	
+	
+	#botaobanner {
+		left: 4vw;
+		top: 28vh;
+	}
+	
+	#texto1 {
+		position: absolute;
+		left: 4vw;
+		top: 24vh;
+		color: #ffffff;
+		font-size: 1.1rem;
+	}
+	
+	#texto2 {
+		position: absolute;
+		left: 4vw;
+		top: 26vh;
+		color: #ffffff;
+		font-size: 1rem;
+	}
+
+	.categoria {
+		position: absolute;
+		left: 4vw;
+		font-size: 1.8rem;
+		margin-bottom: 30px;
+	}
+
+	.vertudo {
+		position: absolute;
+		right: 5vw;
+		color: blue;
+	}
+
+	.produtos {
+		width: 90%;
+		align: center;
+	}
+
+	.produtos li {
+		display: inline-block;
+		text-align: center;
+		width: 200px;
+		vertical-align: top;
+		margin-top: 20px;
+		padding: 2vh 2vw;
+		box-sizing: border-box;
+	}
+
+	.fotoproduto {
+		width: 130%;
+		align: center;
+	}
+
+	.logofinal {
+		display: inline-block;
+		vertical-align: top;
+		padding-right: 20px;
+		padding-top: 10px;
+	}
+	
+	.informacoes {
+		display: inline-block;
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+	
+	.pinfo {
+		padding: 15px;
+		font-size: 20px;
+	}
+	
+	.formulario {
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 20px;
+	}
+	
+	.faleconosco{
+		font-weight: bold;
+		padding-bottom: 10px;
+	
+	}
+	
+	.form label {	       /*acrescentei isto pra ficar um embaixo do outro no formulario*/
+		display: block;
+		font-size: 20px;
+		
+	}
+
+	
+	.Enviarmensagem {
+		background-color: rgb(89, 89, 209);
+		color:#ffffff;
+		display: block;  /*quando coloquei isso o botao foi pra debaixo da mensagem, estava ao lado */
+		padding: 10px;
+	}
+	
+	.busca {
+		position: absolute;
+		top: 3vh;
+		right: 40vw;
+		display: inline-block;
+		width: 11rem;
+		padding: 0.2rem;
+		border-radius: 0.9rem;
+		background-color: rgb(208, 233, 233);
+	}
+	
+	#textobusca {
+		border:none;
+		background-color: rgb(208, 233, 233);
+		outline:none; /*isso é pra nao aparecer a borda quando clica no buscador*/
+		width: 8rem;
+	}
+
+}
