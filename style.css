@@ -187,284 +187,8 @@ footer {
 	padding: 40px;
 }
 
-@media screen and (max-width: 281px)  {
 
-	header {
-		padding: 10px;
-		padding-bottom: 10px;
-		margin-bottom: 10px;
-	}
-
-	.busca {
-		position: absolute;
-		top: 0.5vh;
-		right: 28vw;
-		width: 8rem;
-	}	
-
-			
-	#textobusca {
-		border:none;
-		width: 5rem;
-		font-size: 0.8rem;
-	}
-
-	#buscar {
-		display: inline-block;
-		size: 10%;
-	}
-
-	.login {
-		position: absolute;
-		top: 0.5vh;
-		right: 2vw;	
-	}	
-
-	#botaobanner {
-		position: absolute;
-		top: 0.5vh;
-		left: 1vh;
-		
-	}
-
-	
-	.produtos {
-		width: 100%;
-	}
-
-	.categoria {
-		font-size: 1rem;
-	}
-
-	.produtos li {
-		display: inline-block;
-		text-align: center;
-		width: 120px;
-		vertical-align: top;
-		margin-top: 20px;
-		padding: 1vh 1vw;
-		box-sizing: border-box;
-	}
-
-	.pinfo {
-		padding: 4px;
-		font-size: 16px;
-	}
-
-}	
-
-
-@media screen and (max-width: 415px)  {
-	
-	header {
-		background:#ffffff;
-		padding: 10px;
-		padding-bottom: 15px;
-	}
-
-	.busca {
-		position: absolute;
-		top: 0.5vh;
-		right: 30vw;
-	}
-
-	
-	.login {
-		position: absolute;
-		top: 0.5vh;
-		right: 2vw;	
-	}	
-
-	#botaobanner {
-		left: 6vw;
-		
-	}
-
-	
-	#texto1 {
-		position: absolute;
-		left: 6vw;
-	}	
-	
-	#texto2 {
-		position: absolute;
-		left: 4vw;
-	}	
-
-	.categoria {
-		position: absolute;
-		left: 6vw;
-		margin-bottom: 15px;
-	}
-	
-	.produtos {
-		width: 100%;
-		align: center;
-	}
-
-	.produtos li {
-		display: inline-block;
-		text-align: center;
-		width: 140px;
-	}
-
-	.pinfo {
-		padding: 5px;
-		font-size: 20px;
-	}
-
-	.formulario {
-		display: inline-block;
-		box-sizing: border-box;
-		padding: 2vh 10vw;
-	}
-
-	.Enviarmensagem {
-		background-color: rgb(89, 89, 209);
-		color:#ffffff;
-		display: block;  /*quando coloquei isso o botao foi pra debaixo da mensagem, estava ao lado */
-		padding: 5px;
-	}
-
-	footer {
-		text-align: center;
-		padding: 10px;
-	}
-
-}
-
-@media screen and (max-width: 821px) {
-	
-
-	.busca {
-		position: absolute;
-		top: 2.3vh;
-		right: 26vw;
-	}	
-
-	.categoria {
-		font-size: 1.15rem;
-		font-weight: bold;
-	}
-
-	.produtos li {
-		display: inline-block;
-		text-align: center;
-		width: 200px;
-	}	
-
-	.vertudo {
-		position: absolute;
-		right: 7vw;
-	}	
-
-	
-	.final {
-		width: 80%;
-		display: block;
-		padding-left: 20vw;
-	}
-
-	.logofinal {
-		display: block;
-		align: center;
-		padding-left: 8vw;
-	}
-	
-	
-	.pinfo {
-		padding: 5px;
-		font-size: 1rem;
-		padding-left: 8vw;
-		
-	}
-
-	.formulario {
-		display: block;
-		box-sizing: border-box;
-		padding: 2vh 10vw;
-		margin-left: 5vw;
-		align: center;
-	}
-
-}
-
-
-@media screen and (max-width: 1023px) {
-	
-	header {
-		background-color: #ffffff;
-	}
-	
-	#botaobanner {
-		left: 4vw;
-		top: 21vh;
-	}
-
-	
-	#texto1 {
-		position: absolute;
-		left: 4vw;
-		top: 19vh;
-		
-	}
-	
-	#texto2 {
-		position: absolute;
-		left: 4vw;
-		top: 17vh;
-		
-	}
-
-	.vertudo {
-		position: absolute;
-		right: 10vw;
-	}
-
-	.final {
-		width: 100%;
-		display: inline-block;
-		padding-left: 1vw;
-	}
-
-	.logofinal {
-		padding-left: 1vw;
-	}
-	
-	.informacoes {
-		display: inline-block;
-		padding-left: 1vw;
-		padding-right: 1vw;
-				
-	}
-	
-	.pinfo {
-		padding: 7px;
-		font-size: 1rem;
-	}
-
-	.formulario {
-		display: inline-block;
-		box-sizing: border-box;
-		padding: 1vh 1vw;
-	}
-
-	.Enviarmensagem {
-		background-color: rgb(89, 89, 209);
-		color:#ffffff;
-		display: block;  
-		padding: 5px;
-	}
-
-	footer {
-		text-align: center;
-		padding: 10px;
-	}
-	
-}
-
-
-@media screen and (min-width: 1024px)  {
+@media screen and (max-width: 1800px)  {
 	
 	.busca {
 		position: absolute;
@@ -475,13 +199,14 @@ footer {
 	
 	#botaobanner {
 		left: 4vw;
-		top: 28vh;
+		top: 40vh;
+		
 	}
 	
 	#texto1 {
 		position: absolute;
 		left: 4vw;
-		top: 24vh;
+		top: 34vh;
 		color: #ffffff;
 		font-size: 1.1rem;
 	}
@@ -489,7 +214,7 @@ footer {
 	#texto2 {
 		position: absolute;
 		left: 4vw;
-		top: 26vh;
+		top: 36.5vh;
 		color: #ffffff;
 		font-size: 1rem;
 	}
@@ -590,3 +315,237 @@ footer {
 	}
 
 }
+
+
+@media screen and (max-width: 821px) {
+	
+
+	.busca {
+		position: absolute;
+		top: 2.3vh;
+		right: 26vw;
+	}	
+
+	.categoria {
+		font-size: 1.15rem;
+		font-weight: bold;
+	}
+
+	.produtos li {
+		display: inline-block;
+		text-align: center;
+		width: 200px;
+	}	
+
+	.vertudo {
+		position: absolute;
+		right: 7vw;
+	}	
+
+	
+	.final {
+		width: 80%;
+		display: block;
+		padding-left: 20vw;
+	}
+
+	.logofinal {
+		display: block;
+		align: center;
+		padding-left: 8vw;
+	}
+	
+	
+	.pinfo {
+		padding: 5px;
+		font-size: 1rem;
+		padding-left: 8vw;
+		
+	}
+
+	.formulario {
+		display: block;
+		box-sizing: border-box;
+		padding: 2vh 10vw;
+		margin-left: 8vw;
+		align: center;
+	}
+
+}
+
+
+@media screen and (max-width: 415px)  {
+	
+	header {
+		background:#ffffff;
+		padding: 10px;
+		padding-bottom: 15px;
+	}
+
+	.busca {
+		position: absolute;
+		top: 0.5vh;
+		right: 30vw;
+	}
+
+	
+	.login {
+		position: absolute;
+		top: 0.5vh;
+		right: 2vw;	
+	}	
+
+	#botaobanner {
+		position: absolute;
+		left: 6vw;
+		top: 12vh;
+		
+	}
+	
+	#texto1 {
+		position: absolute;
+		left: 6vw;
+		top: 8vh;
+	}	
+	
+	#texto2 {
+		position: absolute;
+		left: 4vw;
+		top: 10vh;
+
+
+	}	
+
+	.categoria {
+		position: absolute;
+		left: 6vw;
+		margin-bottom: 15px;
+	}
+	
+	.produtos {
+		width: 100%;
+		align: center;
+	}
+
+	.produtos li {
+		display: inline-block;
+		text-align: center;
+		width: 180px;
+	}
+
+	.fotoproduto {
+		width: 95%;
+	}
+
+	.final {
+		
+		padding: 0;
+		padding-left: 1vw;
+	}
+
+	.pinfo {
+		padding: 5px;
+		font-size: 20px;
+	}
+
+	.formulario {
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 2vh 10vw;
+	}
+
+	.Enviarmensagem {
+		background-color: rgb(89, 89, 209);
+		color:#ffffff;
+		display: block;  /*quando coloquei isso o botao foi pra debaixo da mensagem, estava ao lado */
+		padding: 5px;
+	}
+
+	footer {
+		text-align: center;
+		padding: 10px;
+	}
+
+}
+
+@media screen and (max-width: 281px)  {
+
+	header {
+		padding: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+
+	.busca {
+		position: absolute;
+		top: 0.5vh;
+		right: 28vw;
+		width: 8rem;
+	}	
+
+			
+	#textobusca {
+		border:none;
+		width: 5rem;
+		font-size: 0.8rem;
+	}
+
+	#buscar {
+		display: inline-block;
+		size: 10%;
+	}
+
+	.login {
+		position: absolute;
+		top: 0.5vh;
+		right: 2vw;	
+	}	
+
+	#botaobanner {
+		position: absolute;
+		top: 0.5vh;
+		left: 1vh;
+		
+	}
+
+	
+	.produtos {
+		width: 100%;
+	}
+
+	.categoria {
+		font-size: 1rem;
+	}
+
+	.produtos li {
+		display: inline-block;
+		text-align: center;
+		width: 120px;
+		vertical-align: top;
+		margin-top: 20px;
+		padding: 1vh 1vw;
+		box-sizing: border-box;
+	}
+
+	.final {
+		padding-left: 1vw;
+	}
+
+	.informacoes {
+		padding: 6vw;
+	}
+
+	.pinfo {
+		padding: 2px;
+		font-size: 14px;
+	}
+
+	.formulario {
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 0;
+		width: 80%;
+	}
+
+
+}	
