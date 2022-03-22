@@ -187,6 +187,37 @@ footer {
 	padding: 40px;
 }
 
+/* css do login.html */
+
+#iniciosessao {
+	widht: 100%;
+	background-color: rgba(186, 192, 190, 0.096);
+	padding-left: 30vw;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	
+}
+
+#form {
+	width: 60%;
+	align: center;
+}
+
+#email {
+	margin: 1vh;
+}
+
+#senha {
+	margin: 1vh;
+}
+
+#Entrar {
+	display: block;
+	margin-top: 1vh;
+	margin: 1vh;
+}
+
+/*responsividade de todas paginas*/
 
 @media screen and (max-width: 1800px)  {
 	
@@ -317,7 +348,18 @@ footer {
 }
 
 
-@media screen and (max-width: 821px) {
+@media screen and(max-width: 1280px) {
+
+	.final {
+		width: 80%;
+		display: block;
+	
+	}
+
+}
+
+
+@media screen and (max-width: 1024px) {
 	
 
 	.busca {
@@ -342,11 +384,11 @@ footer {
 		right: 7vw;
 	}	
 
-	
+		
 	.final {
 		width: 80%;
 		display: block;
-		padding-left: 20vw;
+		
 	}
 
 	.logofinal {
@@ -371,6 +413,8 @@ footer {
 		align: center;
 	}
 
+
+
 }
 
 
@@ -382,10 +426,15 @@ footer {
 		padding-bottom: 15px;
 	}
 
+	#logo {
+		position: absolute;
+		top: 2vh;
+	}
+
 	.busca {
 		position: absolute;
 		top: 0.5vh;
-		right: 30vw;
+		right: 25vw;
 	}
 
 	
@@ -398,7 +447,7 @@ footer {
 	#botaobanner {
 		position: absolute;
 		left: 6vw;
-		top: 12vh;
+		top: 13vh;
 		
 	}
 	
@@ -412,8 +461,6 @@ footer {
 		position: absolute;
 		left: 4vw;
 		top: 10vh;
-
-
 	}	
 
 	.categoria {
@@ -438,7 +485,7 @@ footer {
 	}
 
 	.final {
-		
+		width: 100%;
 		padding: 0;
 		padding-left: 1vw;
 	}
@@ -468,44 +515,64 @@ footer {
 
 }
 
+@media screen and (max-width: 415px)  {
+
+	.produtos li {
+		display: inline-block;
+		text-align: center;
+		width: 160px;
+	}
+
+
+}	
+
+
 @media screen and (max-width: 281px)  {
 
 	header {
 		padding: 10px;
-		padding-bottom: 10px;
-		margin-bottom: 10px;
+		margin:0;
+		
 	}
+
+	#logo {
+		position: absolute;
+		top: 2vh;
+	}
+
+
 
 	.busca {
 		position: absolute;
 		top: 0.5vh;
-		right: 28vw;
-		width: 8rem;
+		right: 23vw;
+		width: 7rem;
 	}	
 
 			
 	#textobusca {
 		border:none;
-		width: 5rem;
-		font-size: 0.8rem;
+		width: 4rem;
+		font-size: 0.6rem;
 	}
 
 	#buscar {
 		display: inline-block;
-		size: 10%;
+		size: 8%;
 	}
 
 	.login {
 		position: absolute;
 		top: 0.5vh;
-		right: 2vw;	
+		right: 2vw;
+		
 	}	
 
 	#botaobanner {
 		position: absolute;
-		top: 0.5vh;
+		top: 13vh;
 		left: 1vh;
-		
+				
 	}
 
 	
@@ -527,12 +594,22 @@ footer {
 		box-sizing: border-box;
 	}
 
+	#iniciosessao {
+		padding-left: 9vw;
+	}
+
 	.final {
 		padding-left: 1vw;
 	}
 
+	#logofinal {
+		padding: 0;
+		margin: 0;
+	}
+
 	.informacoes {
-		padding: 6vw;
+		padding-left: 6vw;
+		padding-bottom: 2vw;
 	}
 
 	.pinfo {
@@ -546,6 +623,5 @@ footer {
 		padding: 0;
 		width: 80%;
 	}
-
 
 }	
