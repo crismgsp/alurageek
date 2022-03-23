@@ -1,0 +1,349 @@
+/*cabecalho*/
+
+header{
+	background: #ffffff;
+	padding: 1vh 0;
+}
+
+
+#logo {
+	width: 20%;
+	display: inline-block;
+}
+
+.busca {
+    position: absolute;
+	top: 2.6vh;
+	right: 23vw;
+	display: inline-block;
+	width: 9rem;
+	padding: 0.2rem;
+	border-radius: 0.9rem;
+	background-color: rgb(208, 233, 233);
+}
+
+#textobusca {
+	border:none;
+	background-color: rgb(208, 233, 233);
+	outline:none; /*isso é pra nao aparecer a borda quando clica no buscador*/
+	width: 6rem;
+}
+
+#buscar {
+	display: inline-block;
+	size: 80%;
+}
+
+.login {
+    position: absolute;
+	top: 2.6vh;
+	right: 2vw;
+	display: inline;
+	background-color: #ffffff;
+	border-color: blue;
+	color:blue;
+	font-size: 1.1rem;
+	padding: 0.2rem;
+}
+
+/*parte das informacoes e formulario de enviar mensagem*/
+
+.final {
+	display: inline-block;
+	background-color: rgba(185, 214, 231, 0.329);
+	width:100%;
+	padding-left: 10%;
+	padding-right: 10%;
+
+}
+
+
+.logofinal {
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 20px;
+	padding-top: 10px;
+}
+
+.informacoes {
+	display: inline-block;
+	padding-left: 7vw;
+	padding-right: 7vw;
+}
+
+.pinfo {
+	padding: 15px;
+	font-size: 20px;
+}
+
+.formulario {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 10vh 10vw;
+}
+
+.faleconosco{
+	font-weight: bold;
+	padding-bottom: 10px;
+	font-size: 1.1rem;
+
+}
+
+.form label {	       /*acrescentei isto pra ficar um embaixo do outro no formulario*/
+	display: block;
+	font-size: 20px;
+
+}
+
+
+.Enviarmensagem {
+	background-color: rgb(89, 89, 209);
+	color:#ffffff;
+	display: block;  /*quando coloquei isso o botao foi pra debaixo da mensagem, estava ao lado */
+	padding: 10px;
+}
+
+/*rodapé*/
+footer {
+	text-align: center;
+	padding: 40px;
+}
+
+/*responsividade de todas paginas*/
+
+@media screen and (max-width: 1800px)  {
+    
+    .busca {
+		position: absolute;
+		top: 3.4vh;
+		right: 40vw;
+        display: inline-block;
+		width: 11rem;
+		padding: 0.2rem;
+		border-radius: 0.9rem;
+		background-color: rgb(208, 233, 233);
+
+	}
+   
+	#textobusca {
+		border:none;
+		background-color: rgb(208, 233, 233);
+		outline:none; /*isso é pra nao aparecer a borda quando clica no buscador*/
+		width: 8rem;
+	}
+    
+    .logofinal {
+		display: inline-block;
+		vertical-align: top;
+		padding-right: 20px;
+		padding-top: 10px;
+	}
+	
+	.informacoes {
+		display: inline-block;
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+	
+	.pinfo {
+		padding: 15px;
+		font-size: 20px;
+	}
+	
+	.formulario {
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 20px;
+	}
+	
+	.faleconosco{
+		font-weight: bold;
+		padding-bottom: 10px;
+	
+	}
+	
+	.form label {	       /*acrescentei isto pra ficar um embaixo do outro no formulario*/
+		display: block;
+		font-size: 20px;
+		
+	}
+
+	
+	.Enviarmensagem {
+		background-color: rgb(89, 89, 209);
+		color:#ffffff;
+		display: block;  /*quando coloquei isso o botao foi pra debaixo da mensagem, estava ao lado */
+		padding: 10px;
+	}
+
+}
+
+@media screen and(max-width: 1280px) {
+
+	.final {
+		width: 80%;
+		display: block;
+	
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+    .busca {
+		position: absolute;
+		top: 2.3vh;
+		right: 26vw;
+	}	
+    .final {
+		width: 80%;
+		display: block;
+		
+	}
+
+	.logofinal {
+		display: block;
+		align: center;
+		padding-left: 8vw;
+	}
+	
+	
+	.pinfo {
+		padding: 5px;
+		font-size: 1rem;
+		padding-left: 8vw;
+		
+	}
+
+	.formulario {
+		display: block;
+		box-sizing: border-box;
+		padding: 2vh 10vw;
+		margin-left: 8vw;
+		align: center;
+	}
+
+}
+
+@media screen and (max-width: 415px)  {
+	header {
+		background:#ffffff;
+		padding: 10px;
+		padding-bottom: 15px;
+	}
+
+	#logo {
+		position: absolute;
+		top: 2vh;
+	}
+
+	.busca {
+		position: absolute;
+		top: 0.5vh;
+		right: 25vw;
+	}
+
+	
+	.login {
+		position: absolute;
+		top: 0.5vh;
+		right: 2vw;	
+	}	
+
+    .final {
+		width: 100%;
+		padding: 0;
+		padding-left: 1vw;
+	}
+
+	.pinfo {
+		padding: 5px;
+		font-size: 20px;
+	}
+
+	.formulario {
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 2vh 10vw;
+	}
+
+	.Enviarmensagem {
+		background-color: rgb(89, 89, 209);
+		color:#ffffff;
+		display: block;  /*quando coloquei isso o botao foi pra debaixo da mensagem, estava ao lado */
+		padding: 5px;
+	}
+
+	footer {
+		text-align: center;
+		padding: 10px;
+	}
+
+}
+
+@media screen and (max-width: 281px)  {
+	header {
+		padding: 10px;
+		margin:0;
+		
+	}
+
+	#logo {
+		position: absolute;
+		top: 2vh;
+	}
+
+
+
+	.busca {
+		position: absolute;
+		top: 0.5vh;
+		right: 23vw;
+		width: 7rem;
+	}	
+
+			
+	#textobusca {
+		border:none;
+		width: 4rem;
+		font-size: 0.6rem;
+	}
+
+	#buscar {
+		display: inline-block;
+		size: 8%;
+	}
+
+	.login {
+		position: absolute;
+		top: 0.5vh;
+		right: 2vw;
+		
+	}
+	
+	.final {
+		padding-left: 1vw;
+	}
+
+	#logofinal {
+		padding: 0;
+		margin: 0;
+	}
+
+	.informacoes {
+		padding-left: 6vw;
+		padding-bottom: 2vw;
+	}
+
+	.pinfo {
+		padding: 2px;
+		font-size: 14px;
+	}
+
+	.formulario {
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 0;
+		width: 80%;
+	}
+
+}	
