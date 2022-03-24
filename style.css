@@ -72,6 +72,13 @@
 	background-color: azure;
 }
 
+/*este abaixo é pra tirar o sublinhado do link que vem por padrão*/
+.lista a {
+	text-decoration: none;
+}
+
+
+
 .verproduto{
 	color:blue;
 	font-weight: bold;
