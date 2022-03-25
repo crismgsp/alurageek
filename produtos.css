@@ -75,6 +75,10 @@
 		padding: 0;
 		padding-left: 1vw;
 	}
+
+	.fotodescricao {
+		margin-left: 15vw;
+	}
 	
 	#produtossimilares {
 		padding: 0;
@@ -83,6 +87,8 @@
 	}
 
 }	
+
+
 
 @media screen and (max-width: 281px) {
 

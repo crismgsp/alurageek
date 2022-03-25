@@ -1,0 +1,63 @@
+body {
+    background-color: rgba(137, 148, 148, 0.103);
+}
+
+
+
+#adicionarimagens {
+   display: inline-block;
+   width: 80vw;
+   padding: 5vw;
+}
+
+#tituloadicionar {
+    padding-left: 15vw;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#caixaupload {
+	background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+	margin: 10px auto;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 50%;
+	max-width: 300px;
+    display: inline-block;
+    margin-left: 15vw;
+	
+}
+
+#caixaupload label.label-upload{
+	border: none;
+	min-height: 150px;
+	text-align: center;
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: #04090cb7;
+	position: relative;
+	
+}
+
+#ou {
+    display: inline-block;
+    padding: 1vw;
+}
+
+#adicionarimagem2 {
+    display: inline-block;
+    padding: 2vw;
+    background-color: #ffffff;
+    color: blue;
+    border-style: solid;
+    border-color: blue;
+}
+
+input[type="file"] { 
+    display: none;    /*fiz isto para sumir um botao padrao que tinha com uma mensagem */
+ }
+
