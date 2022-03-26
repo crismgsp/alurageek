@@ -109,6 +109,8 @@
 	.fotodescricao {
 		margin-top: 0;
 		width: 100px;
+		padding-left: 0;
+		margin-left: 3px;
 		padding-bottom: 3vh;
 		
 	}   
