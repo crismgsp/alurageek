@@ -193,16 +193,16 @@ footer {
 	}	
 
     .final {
-		width: 100%;
+		width: 100vw;
 		display: inline-block;
-		padding: 2vh;
+		padding: 0;
 				
 	}
 
 	.logofinal {
 		display: inline-block;
 		align: left;
-		padding-left: 0;
+		padding-left: 8vw;
 				
 	}
 	
@@ -249,8 +249,17 @@ footer {
 	.busca {
 		position: absolute;
 		top: 0.5vh;
-		right: 25vw;
-	}
+		right: 21vw;
+		width: 9rem;
+	}	
+
+			
+	#textobusca {
+		border:none;
+		width: 6rem;
+		font-size: 0.8rem;
+	}	
+	
 
 	
 	.login {
@@ -286,7 +295,6 @@ footer {
 		display: block;
 		box-sizing:border-box;
 		margin-left: 6vw;
-		
 		
 		
 	}
@@ -349,14 +357,17 @@ footer {
 		padding-left: 1vw;
 	}
 
-	#logofinal {
-		padding: 0;
-		margin: 0;
+	.logofinal {
+		padding-left: 0;
+		margin-left: 3vw;
+		
+
 	}
 
 	.informacoes {
-		padding-left: 6vw;
+		padding-left: 2vw;
 		padding-bottom: 2vw;
+		margin: 4vw;
 	}
 
 	.pinfo {
