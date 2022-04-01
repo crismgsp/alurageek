@@ -1,3 +1,3 @@
 # alurageek
 
-projeto está faltando ajustar melhor a parte de responsividade...arrumei um pouco...falta acrescenter o arquivo pra ficar parecido nos diferentes navegadores...
+projeto está faltando deixar o site dinamico, deixar funcional a parte de adicionar produto, deixar barra de pesquisa funcional, validar formulario de iniciar sessao e validar formulario do fale conosco e alguns detalhes
