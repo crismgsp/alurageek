@@ -7,10 +7,10 @@
 		<meta name="viewport" content="width=device-width initial-scale=1.0"> 
 		<title>Alura Geek</title>
 		
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="normalize.css">
-		<link rel="stylesheet" href="global.css">
-		<link rel="stylesheet" href="produtos.css">
+		<link rel="stylesheet" href="../assets/css/reset.css">
+		<link rel="stylesheet" href="../assets/css/normalize.css">
+		<link rel="stylesheet" href="../assets/css/global.css">
+		<link rel="stylesheet" href="../assets/css/produtos.css">
 		<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css'>
 		
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -39,18 +39,16 @@
 		</header>	
 	
 		<div class="descricao">
-            <img class="fotodescricao" src="Imagens/console6.png">
+            <img class="fotodescricao" src="${imagem}">
 
             <div id="containerdescricao">
-                <div id="containermenor">
-                    <h1 id="titulodescricao">Gameboy</h1>
-                    <p id="precodescricao">R$ 135,00</p>
-                    <p id="textodescricao"> Gameboy da Flambaxy, vem com 40 jogos diversos. </p>
+                <div id="containermenor" data-descricao>
+                    
                 </div>    
             </div>
 
             <div id="produtossimilares">
-                <p id="titulosimilares">Produtos Similares</p>
+                <p id="titulosimilares" data-similares>Produtos Similares</p>
                 <li class="similar" id="consoles"><a href="playstation.html">
                     <img class="fotoproduto" src="Imagens/console2.png">
                     <p class="produto-descricao">Playstation5</p>
@@ -58,35 +56,7 @@
                     <p class="verproduto">Ver produto</p>
                 </a>	
                 </li>
-                <li class="similar" id="consoles"><a href="nintendo.html">
-                    <img class="fotoproduto" src="Imagens/console3.png">
-                    <p class="produto-descricao">Nintendo</p>
-                    <p class="produto-preco">R$ 540,00</p>
-                    <p class="verproduto">Ver produto</p>
-                </a>>	
-                </li>
-                <li class="similar" id="consoles"><a href="doiscontroles.html">
-                    <img class="fotoproduto" src="Imagens/console4.png">
-                    <p class="produto-descricao">2 controles</p>
-                    <p class="produto-preco">R$ 120,00</p>
-                    <p class="verproduto">Ver produto</p>
-                </a>	
-                </li>
-                <li class="similar" id="consoles"><a href="box.html">
-                    <img class="fotoproduto" src="Imagens/console5.png">
-                    <p class="produto-descricao">Box</p>
-                    <p class="produto-preco">R$ 400,00</p>
-                    <p class="verproduto">Ver produto</p>
-                </a>	
-                </li>
-                <li class="similar" id="consoles" ><a href="controlebranco.html">
-                    <img class="fotoproduto" src="Imagens/console1.png">
-                    <p class="produto-descricao">Controle branco</p>
-                    <p class="produto-preco">R$ 95,00</p>
-                    <p class="verproduto">Ver produto</p>
-                </a>	
-                </li>
-
+                
             </div>   
             
         </div>	
@@ -137,5 +107,6 @@
         </footer>
 
     </body>
+    <script type="module" src="../controller/listaProdutos-controller.js"></script>
 
 </html>    
