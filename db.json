@@ -2,7 +2,6 @@
     "produtos": [
         {
             "id": 1,
-            "imagem": "https://github.com/crismgsp/alurageek/blob/main/assets/Imagens/1Caneca-average.png"
             "nome": "Caneca Star Wars",
             "preco": 30,
             "categoria_id": 1
