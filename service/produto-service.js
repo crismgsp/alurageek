@@ -1,5 +1,5 @@
 const listaProdutos = () => {
-    return fetch(`http://localhost:3000/produtos`)
+    return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos`)
     .then( resposta => {
         if(resposta.ok){
             return resposta.json()
@@ -9,7 +9,7 @@ const listaProdutos = () => {
 }
 
 const adicionaProduto = ( nome, preco, categoria, id) => {
-    return fetch(`http://localhost:3000/produtos` , {
+    return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos` , {
         method: 'POST',
         headers: {
             'Content-type' : 'application/json'
@@ -29,7 +29,7 @@ const adicionaProduto = ( nome, preco, categoria, id) => {
 }
 
 const removeProduto = (id) => {
-    return fetch(`http://localhost:3000/produtos/${id}` , {
+    return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos/${id}` , {
         method: 'DELETE'    
     })
     .then(resposta => {
@@ -40,7 +40,7 @@ const removeProduto = (id) => {
 } 
 
 const detalhaProduto = (id) => {
-    return fetch(`http://localhost:3000/produtos/${id}`)
+    return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos/${id}`)
     .then( resposta => {
         if(resposta.ok){
             return resposta.json()
@@ -50,7 +50,7 @@ const detalhaProduto = (id) => {
 }
 
 const atualizaProduto = (id, imagem, nome, preco) => {
-    return fetch(`http://localhost:3000/produtos/${id}`, {
+    return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-type' : 'application.json'
