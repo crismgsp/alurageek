@@ -23,12 +23,14 @@ const detalhaoproduto = ( nome, preco, descricao, id) => {
 const localDetalha = document.querySelector('[data-descricao]')
 
 const render = async () => {
+
         
     try{
+        
         const detalhaProduto = await produtoService.detalhaProduto(id)
 
-        detalhaProduto.id(elemento => {
-            localDetalha.appendChild(detalhaoproduto( elemento.nome,elemento.preco, elemento.descricao, elemento.id ))
+        detalhaProduto.id (elemento => {
+            localDetalha.appendChild(detalhaoproduto( elemento.nome, elemento.preco, elemento.descricao, elemento.id ))
         })
         
     }
@@ -39,3 +41,5 @@ const render = async () => {
 }
 
 render()
+
+

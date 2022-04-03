@@ -7,10 +7,10 @@
 		<meta name="viewport" content="width=device-width initial-scale=1.0"> 
 		<title>Alura Geek</title>
 		
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="global.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="../assets/css/reset.css">
+		<link rel="stylesheet" href="../assets/css/normalize.css">
+        <link rel="stylesheet" href="../assets/css/global.css">
+		<link rel="stylesheet" href="../assets/css/style.css">
 		<link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css'>
 		
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -40,14 +40,14 @@
 
             <div id="iniciosessao">
                 
-                <form class ="formlogin">
+                <form class ="formlogin" data-login>
 
                     <h3 id="textoiniciarsessao">Iniciar Sessão</h3>
                     <label for="email"></label>
-                    <input type="text" id="email" class="input-padrao" required placeholder="Escreva seu email">
+                    <input type="text" id="email" data-email class="input-padrao" required placeholder="Escreva seu email">
 
                     <label for="senha"></label>
-                    <input type="text" id="senha" class="input-padrao" required placeholder="Escreva sua senha">
+                    <input type="text" id="senha" data-senha class="input-padrao" required placeholder="Escreva sua senha">
 
                     <input type="submit" value="Entrar" id="Entrar">	
 
@@ -100,5 +100,6 @@
 		</footer>
 	
 	</body>
+    <script  src="../scripts/validalogin.js"></script>
 
 </html>
