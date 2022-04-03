@@ -1,13 +1,13 @@
 import { produtoService } from "../service/produto-service.js"
 
 
-const detalhaoproduto = ( nome, preco, categoria, id) => {
+const detalhaoproduto = ( nome, preco, descricao, id) => {
     const linhaDetalhaProduto = document.createElement('li')
     const conteudo = `
-    <div class="descricao" data-descricao>    
+    <div class="descricao" >    
         <img class="fotodescricao" data-imagem src="../assets/Imagens/imagem${id}.png">
-        <ul id="containermenor" >
-            <li id="titulodescricao">${produto}</li>
+        <ul id="containermenor" data-descricao>
+            <li id="titulodescricao">${nome}</li>
             <li id="precodescricao">${preco}</li>
             <li id="textodescricao"> ${descricao} </li>
         </ul> 
@@ -25,16 +25,16 @@ const localDetalha = document.querySelector('[data-descricao]')
 const render = async () => {
         
     try{
-        const detalhaProdutos = await produtoService.detalhaProduto(id)
+        const detalhaProduto = await produtoService.detalhaProduto(id)
 
-        detalhaProdutos.foreach(elemento => {
+        detalhaProduto.id(elemento => {
             localDetalha.appendChild(detalhaoproduto( elemento.nome,elemento.preco, elemento.descricao, elemento.id ))
         })
         
     }
     catch(erro) {
         console.log(erro)
-        window.location.href = '../telas/erro.html'
+        window.location.href = '../telas/erro.html' 
     }
 }
 

@@ -1,13 +1,13 @@
 import { produtoService } from "../service/produto-service.js"
 
 
-const criaNovaLinha = ( categoria, nome, preco, id) => {
+const criaNovaLinha = ( categoria_id, nome, preco, id) => {
     const linhaNovoProduto = document.createElement('li')
     const conteudo = `
     <ul class="categoriaproduto">
-    <h2 class="categoria data-categoria>${categoria} </h2> <h2 class="vertudo"> </h2>
+    <h2 class="categoria data-categoria>${categoria_id} </h2> <h2 class="vertudo"> </h2>
     <br>
-    <li class="lista" ><a href ="../telas/produtos.html/${id}">
+    <li class="lista" ><a href ="../telas/produtos.html?id=${id}">
         <img class="fotoproduto" data-imagem src="../assets/Imagens/imagem${id}.png">
         <p class="produto-descricao" data-nome>${nome}</p>
         <p class="produto-preco" data-preco>${preco}</p>
@@ -32,7 +32,7 @@ const render = async () => {
         const listaProdutos = await produtoService.listaProdutos()
 
         listaProdutos.forEach(elemento => {
-            tabela.appendChild(criaNovaLinha(elemento.categoria, elemento.nome,elemento.preco, elemento.id ))
+            tabela.appendChild(criaNovaLinha(elemento.categoria_id, elemento.nome,elemento.preco, elemento.id ))
         })
     }
     catch(erro) {
