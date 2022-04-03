@@ -7,7 +7,7 @@ const criaNovaLinha = ( categoria, nome, preco, id) => {
     <ul class="categoriaproduto">
     <h2 class="categoria data-categoria>${categoria} </h2> <h2 class="vertudo"> </h2>
     <br>
-    <li class="lista" ><a href ="produtos.html/${id}">
+    <li class="lista" ><a href ="../telas/produtos.html/${id}">
         <img class="fotoproduto" data-imagem src="../assets/Imagens/imagem${id}.png">
         <p class="produto-descricao" data-nome>${nome}</p>
         <p class="produto-preco" data-preco>${preco}</p>
@@ -38,7 +38,7 @@ const render = async () => {
     catch(erro) {
         console.log(erro)
         
-        /*window.location.href = '../telas/erro.html' */
+        window.location.href = '../telas/erro.html'
     }
 }
 

@@ -1,30 +1,36 @@
 import { produtoService } from "../service/produto-service.js"
 
 
-const criaNovaLinha = ( categoria, nome, preco, id) => {
-    const linhaNovoProduto = document.createElement('li')
+const detalhaoproduto = ( nome, preco, categoria, id) => {
+    const linhaDetalhaProduto = document.createElement('li')
     const conteudo = `
-        <div id="containermenor" data-descricao>
-            <h1 id="titulodescricao">${produto}</h1>
-            <p id="precodescricao">${preco}</p>
-            <p id="textodescricao"> ${descricao} </p>
-        </div> `
+    <div class="descricao" data-descricao>    
+        <img class="fotodescricao" data-imagem src="../assets/Imagens/imagem${id}.png">
+        <ul id="containermenor" >
+            <li id="titulodescricao">${produto}</li>
+            <li id="precodescricao">${preco}</li>
+            <li id="textodescricao"> ${descricao} </li>
+        </ul> 
+    </div>    
+        `
 
-    linhaNovoProduto.innerHTML = conteudo
-    linhaNovoProduto.dataset.id = id
+    linhaDetalhaProduto.innerHTML = conteudo
+    linhaDetalhaProduto.dataset.id = id
     
-    return linhaNovoProduto
+    return linhaDetalhaProduto
 }
 
 const localDetalha = document.querySelector('[data-descricao]')
 
-const detalha = async () => {
+const render = async () => {
+        
     try{
-        const detalhaProdutos = await produtoService.detalhaProduto()
+        const detalhaProdutos = await produtoService.detalhaProduto(id)
 
-        detalhaProdutos.id (elemento => {
-            localDetalha.appendChild(criaNovaLinha(elemento.categoria, elemento.nome,elemento.preco, elemento.id ))
+        detalhaProdutos.foreach(elemento => {
+            localDetalha.appendChild(detalhaoproduto( elemento.nome,elemento.preco, elemento.descricao, elemento.id ))
         })
+        
     }
     catch(erro) {
         console.log(erro)
@@ -32,7 +38,9 @@ const detalha = async () => {
     }
 }
 
-detalha()
+render()
+
+
 
 
 
