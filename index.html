@@ -79,13 +79,13 @@
 							<div class="formulario">
 								<h3 class="faleconosco">Fale conosco</h3>
 									<form class ="form">
-										<label for="nome">Nome</label>
-										<input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Insira seu nome aqui">
+										<label for="nome" >Nome</label>
+										<input type="text" id="nomesobrenome" class="input-padrao" data-nomeform required placeholder="Insira seu nome aqui">
 
 										<label for="mensagem">Mensagem</label>
-										<textarea id="textarea" cols="28" rows="8" id="mensagem" class="input-padrao"></textarea required placeholder="Escreva sua mensagem">
+										<textarea id="textarea" cols="28" rows="8" id="mensagem" class="input-padrao" data-mensagem></textarea required placeholder="Escreva sua mensagem">
 
-										<input type="submit" value="Enviar mensagem" class="Enviarmensagem">	
+										<input type="submit" value="Enviar mensagem" class="Enviarmensagem" data-botaoenvia>	
 
 									</form>	
 
@@ -103,6 +103,7 @@
 	
 	
 	</body>
-	<script type="module" src="controller/listaProdutos-controller.js"></script>	
+	<script type="module" src="controller/listaProdutos-controller.js"></script>
+	<script src="scripts/enviaformulario.js"></script>	
 
 </html>

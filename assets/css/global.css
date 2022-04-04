@@ -389,4 +389,8 @@ footer {
 		background-color: #ffffff;
 	}
 
+	.Enviarmensagem :disabled {
+		cursor: not-allowed;
+	}
+
 }	
