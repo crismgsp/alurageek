@@ -85,6 +85,17 @@ input[type="file"] {
     background-color: blue;
     border: none;
     padding: 0.5vw;
+    margin-bottom: 3vh;
+}
+
+.botaoadicionaimagem {
+    display: block;
+    width: 30vw;
+    color: #ffffff;
+    background-color: blue;
+    border: none;
+    padding: 0.5vw;
+    margin-left: 20vw ;
 }
 
 @media screen and (max-width: 1200px) {
