@@ -2,10 +2,9 @@ const init = () => {
     
     const validaEmail = (evento) => {
         const input = evento.currentTarget;
-        const regex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
-        const emailTest = regex.test(input.value);
+        const emailvalido = 'crismgsp@gmail.com';
         
-        if(!emailTest) {
+        if(input.value != emailvalido) {
             submitButton.setAttribute('disabled', 'disabled');
         }
         else {
@@ -15,7 +14,9 @@ const init = () => {
 
     const validaSenha = (evento) => {
         const input = evento.currentTarget;
-        if(input.value.lenght < 8) {
+        const senhavalida = '12345678'
+        
+        if(input.value != senhavalida) {
             submitButton.setAttribute('disabled', 'disabled');
         }
         else {
@@ -34,8 +35,7 @@ const init = () => {
     if (submitButton) {
         submitButton.addEventListener('click', (evento) => {
            evento.preventDefault();
-          
-          
+                   
            window.location.href = 'adicionarproduto.html'
    
         })

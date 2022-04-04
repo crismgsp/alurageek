@@ -382,4 +382,11 @@ footer {
 		width: 80%;
 	}
 
+	/*login */
+
+	#Entrar :disabled {
+		cursor: not-allowed;
+		background-color: #ffffff;
+	}
+
 }	
