@@ -8,7 +8,7 @@ const listaProdutos = () => {
     })
 }
 
-const adicionaProduto = ( nome, preco, categoria, id) => {
+const adicionaProduto = ( nome, categoria, preco, id) => {
     return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos` , {
         method: 'POST',
         headers: {
@@ -17,7 +17,7 @@ const adicionaProduto = ( nome, preco, categoria, id) => {
         body: JSON.stringify ({
             nome: nome,
             preco: preco,
-            categoria: categoria_id
+            categoria: categoria
         })
     })
     .then( resposta => {

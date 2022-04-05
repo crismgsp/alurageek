@@ -1,7 +1,7 @@
 import { produtoService } from "../service/produto-service.js"
 
 
-const criaNovaLinha = ( categoria_id, nome, preco, id) => {
+const criaNovaLinha = ( categoria, nome, preco, id) => {
     const linhaNovoProduto = document.createElement('li')
     const conteudo = `
     <ul class="categoriaproduto">
