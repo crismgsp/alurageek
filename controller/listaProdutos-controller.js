@@ -5,9 +5,10 @@ const criaNovaLinha = ( categoria, nome, preco, id) => {
     const linhaNovoProduto = document.createElement('li')
     const conteudo = `
     <ul class="categoriaproduto">
-    <h2 class="categoria data-categoria>${categoria} </h2> <h2 class="vertudo"> </h2>
+    
     <br>
     <li class="lista" ><a href ="../telas/produtos.html?id=${id}">
+        <p> ${categoria}</p>
         <img class="fotoproduto" data-imagem src="../assets/Imagens/imagem${id}.png">
         <p class="produto-descricao" data-nome>${nome}</p>
         <p class="produto-preco" data-preco>${preco}</p>
