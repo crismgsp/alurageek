@@ -16,8 +16,9 @@ const adicionaProduto = ( nome, categoria, preco, id) => {
         },
         body: JSON.stringify ({
             nome: nome,
-            preco: preco,
-            categoria: categoria
+            categoria: categoria,
+            preco: preco
+            
         })
     })
     .then( resposta => {
