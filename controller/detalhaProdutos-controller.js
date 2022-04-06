@@ -4,16 +4,15 @@ import { produtoService } from "../service/produto-service.js"
 const detalhaoproduto = ( nome, preco, descricao, id) => {
     const linhaDetalhaProduto = document.createElement('li')
     const conteudo = `
-    <div class="descricao" >    
+    
+    <ul id="containermenor" data-descricao>
         <img class="fotodescricao" data-imagem src="../assets/Imagens/imagem${id}.png">
-        <ul id="containermenor" data-descricao>
-            <li id="titulodescricao">${nome}</li>
-            <li id="precodescricao">${preco}</li>
-            <li id="textodescricao"> ${descricao} </li>
-        </ul> 
-    </div>    
-        `
-
+        <li id="titulodescricao">${nome}</li>
+        <li id="precodescricao">${preco}</li>
+        <li id="textodescricao"> ${descricao} </li>
+    </ul> 
+    
+    `
     linhaDetalhaProduto.innerHTML = conteudo
     linhaDetalhaProduto.dataset.id = id
     
@@ -22,14 +21,16 @@ const detalhaoproduto = ( nome, preco, descricao, id) => {
 
 const localDetalha = document.querySelector('[data-descricao]')
 
-const render = async () => {
 
-        
+
+const detalha = async () => {
+
+                   
     try{
         
-        const detalhaProduto = await produtoService.detalhaProduto(id)
+        const detalhaProdutos = await produtoService.detalhaProduto(id)
 
-        detalhaProduto.id (elemento => {
+        detalhaProdutos.id (elemento => {
             localDetalha.appendChild(detalhaoproduto( elemento.nome, elemento.preco, elemento.descricao, elemento.id ))
         })
         
@@ -40,6 +41,52 @@ const render = async () => {
     }
 }
 
-render()
+detalha()
+
+const achaSimilares = ( nome, preco, id) => {
+
+    const linhaachasimilar = document.createElement('li')
+    const conteudosimilar = `    
+
+    <ul class="similar" data-similares id="consoles"><a "../telas/produtos.html?id=${id}">
+        <img class="fotoproduto" src="../assets/Imagens/imagem${id}.png">
+        <li class="produto-descricao">${nome}</li>
+        <li class="produto-preco">R$ ${preco}</li>
+        </a>	
+    </ul>
+    `
+    linhaachasimilar.innerHTML = conteudosimilar
+    linhaachasimilar.dataset.id = id
+    
+    return linhaachasimilar
+}
+
+
+const produtossimilares = document.querySelector('[data-similares]')
+
+const similar = async () => {
+
+        
+    try{
+        
+        const similares = await produtoService.listaProdutos()
+
+        
+        similares.forEach(elemento => {
+            produtossimilares.appendChild(achaSimilares( elemento.nome, elemento.preco, elemento.id ))
+        })
+            
+        }
+        catch(erro) {
+            console.log(erro)
+            /*window.location.href = '../telas/erro.html' */
+        }
+
+
+}
+
+        
+
+similar()
 
 

@@ -37,7 +37,7 @@ const init = () => {
                 if(resposta.ok){
                     return resposta.json();
                 }               
-                throw new Error('Não foi possível adicionar o produto')
+                throw new Error('Não foi possível enviar a mensagem')
        
                 })
         })    

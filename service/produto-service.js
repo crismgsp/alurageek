@@ -50,7 +50,7 @@ const detalhaProduto = (id) => {
     })
 }
 
-const atualizaProduto = (id, imagem, nome, preco) => {
+const atualizaProduto = (id, nome, preco) => {
     return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos/${id}`, {
         method: 'PUT',
         headers: {
