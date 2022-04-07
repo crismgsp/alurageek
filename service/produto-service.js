@@ -41,7 +41,7 @@ const removeProduto = (id) => {
 } 
 
 const detalhaProduto = (id) => {
-    return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos/${id}`)
+    return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos/?id=${id}`)
     .then( resposta => {
         if(resposta.ok){
             return resposta.json()

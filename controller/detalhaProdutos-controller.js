@@ -4,13 +4,15 @@ import { produtoService } from "../service/produto-service.js"
 const detalhaoproduto = ( nome, preco, descricao, id) => {
     const linhaDetalhaProduto = document.createElement('li')
     const conteudo = `
-    
-    <ul id="containermenor" data-descricao>
+    <div class="descricao" data-descricaototal>
         <img class="fotodescricao" data-imagem src="../assets/Imagens/imagem${id}.png">
-        <li id="titulodescricao">${nome}</li>
-        <li id="precodescricao">${preco}</li>
-        <li id="textodescricao"> ${descricao} </li>
-    </ul> 
+        <ul id="dadosdescricao" data-descricao>
+            
+            <li id="titulodescricao">${nome}</li>
+            <li id="precodescricao">${preco}</li>
+            <li id="textodescricao"> ${descricao} </li>
+        </ul> 
+    </div>
     
     `
     linhaDetalhaProduto.innerHTML = conteudo
@@ -19,18 +21,26 @@ const detalhaoproduto = ( nome, preco, descricao, id) => {
     return linhaDetalhaProduto
 }
 
-const localDetalha = document.querySelector('[data-descricao]')
-
+const localDetalha = document.querySelector('[data-descricaototal]')
 
 
 const detalha = async () => {
 
-                   
-    try{
-        
-        const detalhaProdutos = await produtoService.detalhaProduto(id)
+    
 
-        detalhaProdutos.id (elemento => {
+    let pegaURL = new URL(window.location);
+
+    let id = pegaURL.searchParams.get('id');
+
+        
+    
+    try{
+
+               
+        const detalhaProdutos =  await produtoService.detalhaProduto(id)
+
+        
+        detalhaProdutos.forEach (elemento => {
             localDetalha.appendChild(detalhaoproduto( elemento.nome, elemento.preco, elemento.descricao, elemento.id ))
         })
         
@@ -43,16 +53,20 @@ const detalha = async () => {
 
 detalha()
 
+
 const achaSimilares = ( nome, preco, id) => {
+
+    
 
     const linhaachasimilar = document.createElement('li')
     const conteudosimilar = `    
 
-    <ul class="similar" data-similares id="consoles"><a "../telas/produtos.html?id=${id}">
+    <ul class="similar" data-similares ><a href = "../telas/produtos.html?id=${id}">
         <img class="fotoproduto" src="../assets/Imagens/imagem${id}.png">
         <li class="produto-descricao">${nome}</li>
         <li class="produto-preco">R$ ${preco}</li>
-        </a>	
+        
+        </a>    
     </ul>
     `
     linhaachasimilar.innerHTML = conteudosimilar
@@ -61,7 +75,6 @@ const achaSimilares = ( nome, preco, id) => {
     return linhaachasimilar
 }
 
-
 const produtossimilares = document.querySelector('[data-similares]')
 
 const similar = async () => {
@@ -69,6 +82,10 @@ const similar = async () => {
         
     try{
         
+        let pegaURL = new URL(window.location);
+
+        let id = pegaURL.searchParams.get('id');
+
         const similares = await produtoService.listaProdutos()
 
         
@@ -82,11 +99,8 @@ const similar = async () => {
             /*window.location.href = '../telas/erro.html' */
         }
 
-
 }
 
         
 
 similar()
-
-
