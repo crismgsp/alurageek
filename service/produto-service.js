@@ -8,8 +8,8 @@ const listaProdutos = () => {
     })
 }
 
-const adicionaProduto = ( nome, categoria, preco, id) => {
-    return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos` , {
+const adicionaProduto = ( nome, categoria, preco, descricao, id) => {
+    return fetch(`http://localhost:3000/produtos` , {
         method: 'POST',
         headers: {
             'Content-type' : 'application/json'
@@ -17,7 +17,8 @@ const adicionaProduto = ( nome, categoria, preco, id) => {
         body: JSON.stringify ({
             nome: nome,
             categoria: categoria,
-            preco: preco
+            preco: preco,
+            descricao: descricao
             
         })
     })

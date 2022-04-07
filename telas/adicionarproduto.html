@@ -38,10 +38,10 @@
 				
 		</header>	
         
-        <div id="adicionarimagens">
+        <div id="adicionarimagens"data-imagem>
             <h1 id="tituloadicionar">Adicionar novo produto</h1>
 
-            <div id="caixaupload">
+            <div id="caixaupload" data-inseririmagem>
 
                 <label for="upload-file" class="label-upload">
                     <div class="textoupload">Arraste para adicionar uma imagem para o produto</div>    
@@ -52,7 +52,7 @@
             <p id="ou">OU</p>
          
       
-            <div id="adicionarimagem2" >   
+            <div id="adicionarimagem2" data-inseririmagem>   
                 <label for="fupload" id="textoupload2">Procure no seu computador</label> 
                 <input type="file" id="fupload" name="fupload"/>
          
@@ -63,15 +63,15 @@
         </div>
 
         
-        <form class ="formadicionar">
+        <form class ="formadicionar" data-form>
            
-            <input type="text" class="nomepreco"  required placeholder="Nome do produto" /> 
+            <input type="text" class="nomepreco"  required placeholder="Nome do produto" data-nomeproduto > 
 
-            <input type="text" class="nomepreco"  required placeholder="Categoria"/>
+            <input type="text" class="nomepreco"  required placeholder="Categoria" data-categoria>
                         
-            <input type="text" class="nomepreco"  required placeholder="Preço do produto"/>
+            <input type="text" class="nomepreco"  required placeholder="Preço do produto" data-preco>
 
-            <input type="text" id="produtotexto" required placeholder="Descrição do produto"/>
+            <input type="text" id="produtotexto" required placeholder="Descrição do produto" data-descricao>
 
             <input type="submit" value="Adicionar produto" class="botaoadiciona">	
 
@@ -115,11 +115,8 @@
 			<p>2022</p> 
 		</footer>
 
-
-
-        
-
-
     </body>
+    <script type="module" src="../controller/insereproduto-controller.js"></script>
+    <script  src="../scripts/uploadimagem.js"></script>
 
-
+</html>

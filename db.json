@@ -1,152 +1,151 @@
 {
-    "produtos": [
-        {
-            "id": 1,
-            "nome": "Caneca Star Wars",
-            "preco": 30,
-            "descricao": "Caneca de louça do Star Wars",
-            "categoria": "Star Wars"
-        },
-
-        {
-            "id": 2,
-            "nome": "Boneco Baby Yoda",
-            "preco": 130,
-            "descricao": "Boneco do Baby Yoda de 30 cm, com roupa.",
-            "categoria": "Star Wars"
-        },
-
-        {
-            "id": 3,
-            "nome": "Fantasia do Star Wars",
-            "preco": 230,
-            "descricao": "Fantasia de adulto do Darth Vader",
-            "categoria": "Star Wars"
-        },
-
-        {
-            "id": 4,
-            "nome": "Boneco de enfeite do Star Wars",
-            "preco": 90,
-            "descricao": "Boneco de 15 cm para enfeitar sua mesa.",
-            "categoria": "Star Wars"
-        },
-
-        {
-            "id": 5,
-            "nome": "Capa de almofada do Yoda",
-            "preco": 80,
-            "descricao": "Capa de almofada antialérgica do Yoda",
-            "categoria": "Star Wars"
-        },
-
-        {
-            "id": 6,
-            "nome": "WebCam Darth Vader",
-            "preco": 135.00,
-            "descricao": "WebCam de ótima qualidade, com tema do Darth Vader.",
-            "categoria": "Star Wars"
-        },
-
-        {
-            "id": 7,
-            "nome": "Controle branco",
-            "preco": 95,
-            "descricao": "Controle branco que se adapta em todos videogames",
-            "categoria": "Consoles"
-        },
-
-        {
-            "id": 8,
-            "nome": "Playstation5",
-            "preco": 1400,
-            "descricao": "Playstation 5, com garantia de 2 anos",
-            "categoria": "Consoles"
-        },
-
-        {
-            "id": 9,
-            "nome": "Nintendo",
-            "preco": 540.00,
-            "descricao": "Videogame Nintendo, novo lançamento",
-            "categoria": "Consoles"
-        },
-
-        {
-            "id": 10,
-            "nome": "Dois controles",
-            "preco": 120,
-            "descricao": "Dois Controles que são anatômicos.",
-            "categoria": "Consoles"
-        },
-
-        {
-            "id": 11,
-            "nome": "Box",
-            "preco": 400,
-            "descricao": "Box da marca GYUETERIOME, garantia de 1 ano.",
-            "categoria": "Consoles"
-        },
-
-        {
-            "id": 12,
-            "nome": "Gameboy",
-            "preco": 135,
-            "descricao": "Gameboy com 40 jogos clássicos.",
-            "categoria": "Consoles"
-        },
-
-        {
-            "id": 13,
-            "nome": "Fronha de travesseiro Atari",
-            "preco": 26,
-            "descricao": "Fronha de travesseiro Atari, antialergica.",
-            "categoria": "Diversos"
-        },
-
-        {
-            "id": 14,
-            "nome": "Controle de videogame",
-            "preco": 80,
-            "descricao": "Controle de videogame, serve pra diversos modelos.",
-            "categoria": "Diversos"
-        },
-
-
-        {
-            "id": 15,
-            "nome": "Boneco do Sonic 10 cm",
-            "preco": 40,
-            "descricao": "Boneco do Sonic, de plastico.",
-            "categoria": "Diversos"
-        },
-
-        {
-            "id": 16,
-            "nome": "Despertador rosa",
-            "preco": 50,
-            "descricao": "Despertador com 4 sons de games classicos.",
-            "categoria": "Diversos"
-        },
-
-
-        {
-            "id": 17,
-            "nome": "Óculos de realidade virtual",
-            "preco": 98,
-            "descricao": "Óculos para asssistir a videos 3d.",
-            "categoria": "Diversos"
-        },
-
-        {
-            "id": 18,
-            "nome": "Pelucia do Pikachu grande",
-            "preco": 240,
-            "descricao": "Boneco de pelúcia do Pikachu, antialérgico.",
-            "categoria": "Diversos"
-        }
-
-    ]
-
-
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Caneca Star Wars",
+      "preco": 30,
+      "descricao": "Caneca de louça do Star Wars",
+      "categoria": "Star Wars"
+    },
+    {
+      "id": 2,
+      "nome": "Boneco Baby Yoda",
+      "preco": 130,
+      "descricao": "Boneco do Baby Yoda de 30 cm, com roupa.",
+      "categoria": "Star Wars"
+    },
+    {
+      "id": 3,
+      "nome": "Fantasia do Star Wars",
+      "preco": 230,
+      "descricao": "Fantasia de adulto do Darth Vader",
+      "categoria": "Star Wars"
+    },
+    {
+      "id": 4,
+      "nome": "Boneco de enfeite do Star Wars",
+      "preco": 90,
+      "descricao": "Boneco de 15 cm para enfeitar sua mesa.",
+      "categoria": "Star Wars"
+    },
+    {
+      "id": 5,
+      "nome": "Capa de almofada do Yoda",
+      "preco": 80,
+      "descricao": "Capa de almofada antialérgica do Yoda",
+      "categoria": "Star Wars"
+    },
+    {
+      "id": 6,
+      "nome": "WebCam Darth Vader",
+      "preco": 135,
+      "descricao": "WebCam de ótima qualidade, com tema do Darth Vader.",
+      "categoria": "Star Wars"
+    },
+    {
+      "id": 7,
+      "nome": "Controle branco",
+      "preco": 95,
+      "descricao": "Controle branco que se adapta em todos videogames",
+      "categoria": "Consoles"
+    },
+    {
+      "id": 8,
+      "nome": "Playstation5",
+      "preco": 1400,
+      "descricao": "Playstation 5, com garantia de 2 anos",
+      "categoria": "Consoles"
+    },
+    {
+      "id": 9,
+      "nome": "Nintendo",
+      "preco": 540,
+      "descricao": "Videogame Nintendo, novo lançamento",
+      "categoria": "Consoles"
+    },
+    {
+      "id": 10,
+      "nome": "Dois controles",
+      "preco": 120,
+      "descricao": "Dois Controles que são anatômicos.",
+      "categoria": "Consoles"
+    },
+    {
+      "id": 11,
+      "nome": "Box",
+      "preco": 400,
+      "descricao": "Box da marca GYUETERIOME, garantia de 1 ano.",
+      "categoria": "Consoles"
+    },
+    {
+      "id": 12,
+      "nome": "Gameboy",
+      "preco": 135,
+      "descricao": "Gameboy com 40 jogos clássicos.",
+      "categoria": "Consoles"
+    },
+    {
+      "id": 13,
+      "nome": "Fronha de travesseiro Atari",
+      "preco": 26,
+      "descricao": "Fronha de travesseiro Atari, antialergica.",
+      "categoria": "Diversos"
+    },
+    {
+      "id": 14,
+      "nome": "Controle de videogame",
+      "preco": 80,
+      "descricao": "Controle de videogame, serve pra diversos modelos.",
+      "categoria": "Diversos"
+    },
+    {
+      "id": 15,
+      "nome": "Boneco do Sonic 10 cm",
+      "preco": 40,
+      "descricao": "Boneco do Sonic, de plastico.",
+      "categoria": "Diversos"
+    },
+    {
+      "id": 16,
+      "nome": "Despertador rosa",
+      "preco": 50,
+      "descricao": "Despertador com 4 sons de games classicos.",
+      "categoria": "Diversos"
+    },
+    {
+      "id": 17,
+      "nome": "Óculos de realidade virtual",
+      "preco": 98,
+      "descricao": "Óculos para asssistir a videos 3d.",
+      "categoria": "Diversos"
+    },
+    {
+      "id": 18,
+      "nome": "Pelucia do Pikachu grande",
+      "preco": 240,
+      "descricao": "Boneco de pelúcia do Pikachu, antialérgico.",
+      "categoria": "Diversos"
+    },
+    {
+      "nome": "teste",
+      "categoria": "teste",
+      "preco": "teste",
+      "descricao": "enviando da pagina adicionaproduto para https...localhost....",
+      "id": 19
+    },
+    {
+      "nome": "teste",
+      "categoria": "teste2",
+      "preco": "45",
+      "descricao": "enviar novamente",
+      "id": 20
+    },
+    {
+      "nome": "travesseiro teste insercao",
+      "categoria": "cama mesa e banho",
+      "preco": "56,00",
+      "descricao": "travesseiro testando insercao",
+      "id": 21
+    }
+  ]
 }
