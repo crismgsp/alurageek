@@ -2,7 +2,7 @@ const init = () => {
     
     const validaEmail = (evento) => {
         const input = evento.currentTarget;
-        const emailvalido = 'crismgsp@gmail.com';
+        const emailvalido = 'lojista@teste.com';
         
         if(input.value != emailvalido) {
             submitButton.setAttribute('disabled', 'disabled');
