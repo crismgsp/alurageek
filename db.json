@@ -127,25 +127,18 @@
       "categoria": "Diversos"
     },
     {
-      "nome": "teste",
-      "categoria": "teste",
-      "preco": "teste",
-      "descricao": "enviando da pagina adicionaproduto para https...localhost....",
-      "id": 19
-    },
-    {
-      "nome": "teste",
-      "categoria": "teste2",
-      "preco": "45",
-      "descricao": "enviar novamente",
-      "id": 20
-    },
-    {
       "nome": "travesseiro teste insercao",
       "categoria": "cama mesa e banho",
       "preco": "56,00",
       "descricao": "travesseiro testando insercao",
       "id": 21
+    },
+    {
+      "nome": "novo teste apos exclusao",
+      "categoria": "teste novo",
+      "preco": "100,00",
+      "descricao": "apos excluir produtos 19 e 20 do db... (deixei o 21 que e o ultimo)...irei inserir este e ver qual id ele assume...",
+      "id": 22
     }
   ]
 }

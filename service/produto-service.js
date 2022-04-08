@@ -31,7 +31,7 @@ const adicionaProduto = ( nome, categoria, preco, descricao, id) => {
 }
 
 const removeProduto = (id) => {
-    return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos/${id}` , {
+    return fetch(`http://localhost:3000/produtos/${id}` , {
         method: 'DELETE'    
     })
     .then(resposta => {
@@ -51,16 +51,17 @@ const detalhaProduto = (id) => {
     })
 }
 
-const atualizaProduto = (id, nome, preco) => {
-    return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos/${id}`, {
+const atualizaProduto = (id, nome, preco, categoria, descricao) => {
+    return fetch(`http://localhost:3000/produtos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-type' : 'application.json'
         },
-        body: JSON.stringfy ({
+        body: JSON.stringify ({
             nome: nome,
             preco: preco,
-            categoria: categoria_id
+            categoria: categoria,
+            descricao: descricao
         })
     })
     .then( resposta => {

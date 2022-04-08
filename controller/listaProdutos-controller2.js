@@ -48,6 +48,16 @@ tabela.addEventListener('click', async (evento)=> {
     }
 }) 
 
+
+
+tabela.addEventListener('click', (evento)=> {
+    let BotaoEditar = evento.target.className === 'editar'
+    if(BotaoEditar){
+        window.location.href = '../telas/editarproduto.html'
+    }
+})
+
+
 const render = async () => {
     try{
         const listaProdutos = await produtoService.listaProdutos()
