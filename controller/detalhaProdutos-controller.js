@@ -35,11 +35,9 @@ const detalha = async () => {
         
     
     try{
-
-               
+     
         const detalhaProdutos =  await produtoService.detalhaProduto(id)
 
-        
         detalhaProdutos.forEach (elemento => {
             localDetalha.appendChild(detalhaoproduto( elemento.nome, elemento.preco, elemento.descricao, elemento.id ))
         })

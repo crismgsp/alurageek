@@ -51,9 +51,11 @@ tabela.addEventListener('click', async (evento)=> {
 
 
 tabela.addEventListener('click', (evento)=> {
+    const linhaProduto = evento.target.closest('[data-id]')
+    let id = linhaProduto.dataset.id
     let BotaoEditar = evento.target.className === 'editar'
     if(BotaoEditar){
-        window.location.href = '../telas/editarproduto.html'
+        window.location.href = `../telas/editarproduto.html?id=${id}`;
     }
 })
 
