@@ -6,12 +6,12 @@ const detalhaoproduto = ( nome, preco, descricao, id) => {
     const conteudo = `
     <div class="descricao" data-descricaototal>
         <img class="fotodescricao" data-imagem src="../assets/Imagens/imagem${id}.png">
-        <ul id="dadosdescricao" data-descricao>
+        <div id="dadosdescricao" data-descricao>
             
-            <li id="titulodescricao">${nome}</li>
-            <li id="precodescricao">${preco}</li>
-            <li id="textodescricao"> ${descricao} </li>
-        </ul> 
+            <p id="titulodescricao">${nome}</p>
+            <p id="precodescricao">R$ ${preco}</p>
+            <p id="textodescricao"> ${descricao} </p>
+        </div> 
     </div>
     
     `

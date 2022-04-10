@@ -11,7 +11,7 @@ const criaNovaLinha = ( categoria, nome, preco, id) => {
         <p> ${categoria}</p>
         <img class="fotoproduto" data-imagem src="../assets/Imagens/imagem${id}.png">
         <p class="produto-descricao" data-nome>${nome}</p>
-        <p class="produto-preco" data-preco>${preco}</p>
+        <p class="produto-preco" data-preco>R$ ${preco}</p>
         <p class="verproduto">Ver produto</p>
         </a>	
     </li>

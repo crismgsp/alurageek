@@ -8,18 +8,19 @@ const detalhaProduto = (id) => {
     })
 }
 
-const atualizaProduto = (nome, categoria, preco, descricao, id) => {
+const atualizaProduto = (id, nome, categoria, preco, descricao) => {
     return fetch(`http://localhost:3000/produtos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-type' : 'application.json'
         },
         body: JSON.stringify ({
+            id: id,
             nome: nome,
             categoria: categoria,
             preco: preco,
-            descricao: descricao,
-            id: id
+            descricao: descricao
+            
         })
     })
     .then( resposta => {

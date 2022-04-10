@@ -1,59 +1,30 @@
 
 
 .descricao {
+	width: 100%;
+	background-color:azure
+	display: inline-block;
 	
-	background-color: rgba(186, 192, 190, 0.096);
-	display: inline;
-	padding-left: 4vw;;
-	margin-bottom: 4vh;
-	padding-top: 4vh;
 }    
 
 .fotodescricao {
-    display: inline;
-    width: 350px;
-	
     
+	display: inline-block;
+    width: 350px;
+	padding: 3vw;
+	    
 }    
-
-#containerdescricao {
-    display: inline;
-    width: 40vw;
-	padding-top: 4vh;
-	position:absolute;
-		
-} 
-
-#containermenor {
-	width: 40vw;
-	padding-bottom: 10vh;
-	padding-left: 6vw;
-	display: inline;
-	width: 40vw;
-}
+ 
 
 #dadosdescricao {
 	display: inline-block;
-	width: 30vw;
+	width: 35vw;
+	padding: 8vw;
+	position:absolute;
+	
 	
 }
 
-#titulodescricao {
-	padding-left: 2vw;
-	
-
-}
-
-#precodescricao {
-	padding-left: 2vw;
-}
-
-#textodescricao {
-	width: 30vw;
-	padding: 2vw;
-	font-size: 20px;
-	
-}
 
 #titulosimilares {
 	font-size: 22px;
