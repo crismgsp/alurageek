@@ -1,15 +1,13 @@
 import { produtoService2 } from "../service/produto-service2.js"
 
-const formulario = document.querySelector('[data-editar]')
+
 
 (async () => {
 
-      
+    const pegaURL = new URL(window.location)
 
-    const produtoselecionado = evento.target.closest('[data-id]')
-    
-    let id = produtoselecionado.dataset.id
-
+    const id = pegaURL.searchParams.get('id')
+   
     const inputNome = document.querySelector('[data-nomeproduto]')
     
     const inputCategoria = document.querySelector('[data-categoria]')
@@ -17,6 +15,8 @@ const formulario = document.querySelector('[data-editar]')
     const inputPreco = document.querySelector('[data-preco]')
 
     const inputDescricao = document.querySelector('[data-descricao]') 
+
+    const inputID = document.querySelector('[data-id]') 
     
       
     try{
@@ -25,6 +25,8 @@ const formulario = document.querySelector('[data-editar]')
         inputCategoria = dados.categoria
         inputPreco = dados.preco 
         inputDescricao = dados.descricao
+        inputID = dados.id
+
 
     }    
        
@@ -34,7 +36,7 @@ const formulario = document.querySelector('[data-editar]')
     } 
  
     
-    
+    const formulario = document.querySelector('[data-editar]')
     
     formulario.addEventListener('submit', async (evento) => {
         evento.preventDefault()

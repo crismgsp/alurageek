@@ -8,7 +8,7 @@ const detalhaProduto = (id) => {
     })
 }
 
-const atualizaProduto = (nome, preco, categoria, descricao, id) => {
+const atualizaProduto = (nome, categoria, preco, descricao, id) => {
     return fetch(`http://localhost:3000/produtos/${id}`, {
         method: 'PUT',
         headers: {
@@ -16,9 +16,10 @@ const atualizaProduto = (nome, preco, categoria, descricao, id) => {
         },
         body: JSON.stringify ({
             nome: nome,
-            preco: preco,
             categoria: categoria,
-            descricao: descricao
+            preco: preco,
+            descricao: descricao,
+            id: id
         })
     })
     .then( resposta => {
