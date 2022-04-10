@@ -68,8 +68,8 @@
 	align: center;
 }
 
-.produtos li:hover {
-	background-color: azure;
+.fotoproduto:hover {
+	transform: scale(1.1);
 }
 
 /*este abaixo é pra tirar o sublinhado do link que vem por padrão*/
