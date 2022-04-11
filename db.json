@@ -126,13 +126,12 @@
       "descricao": "Boneco de pelúcia do Pikachu, antialérgico.",
       "categoria": "Diversos"
     },
-    
     {
       "nome": "novo teste apos exclusao",
       "categoria": "teste novo",
       "preco": "100,00",
       "descricao": "apos excluir produtos 19 e 20 do db... (deixei o 21 que e o ultimo)...irei inserir este e ver qual id ele assume...",
-      "id": 22
+      "id": 19
     },
     {
       "nome": "testando inserir novamente apos o id 21",

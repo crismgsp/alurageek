@@ -31,7 +31,7 @@ const adicionaProduto = ( nome, categoria, preco, descricao, id) => {
 }
 
 const removeProduto = (id) => {
-    return fetch(`http://localhost:3000/produtos/${id}` , {
+    return fetch(`https://my-json-server.typicode.com/crismgsp/backendalurageek/produtos/${id}` , {
         method: 'DELETE'    
     })
     .then(resposta => {
