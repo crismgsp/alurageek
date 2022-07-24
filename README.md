@@ -9,6 +9,8 @@ https://alurageekcrismgsp.vercel.app/ <br>
 
 para entrar no link acima e ver a página faça login com estes dados:   teste@loja.com    senha  12345678 <br>
 
-Obs: Ainda não está funcionando a ferramenta de busca. 
+Aprendi bastante e coloquei em prática o que já tinha aprendido na época em que terminei este chalenge mas ficaram faltando<br>
+alguns detalhes, e como estava inscrita no chalenge de Backend fui participar e inicialmente tive mais <br>
+afinidade com esta outra área, no momento estou focando nisto.
 
 
